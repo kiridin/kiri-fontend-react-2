@@ -1,0 +1,38 @@
+.menu{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+color: #111A1A;
+}
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#111A1A;
+}
+
+li {
+    float: left;
+}
+
+li:first-child {
+    margin-left: 25px;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    padding: 15px 8px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover{
+    background-color: #1e2e2e9c;
+}
+
+li:last-child{
+    float: right;
+    margin-right: 25px;
+}

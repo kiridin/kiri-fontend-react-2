@@ -1,0 +1,43 @@
+/* Botão Fazer Backup */
+.btn-baixar {
+    background-color: rgb(4, 19, 14);
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+                box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+                background-color 0.3s ease-in-out;
+
+    /* Estilo ao passar o mouse */
+    &:hover {
+        transform: scale(1.08) rotate(2deg);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.9);
+        background-color: rgb(0, 30, 20);
+    }
+}
+
+.btn-backup {
+    background-color: rgb(24, 18, 71);
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+                box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+                background-color 0.3s ease-in-out;
+
+    /* Estilo ao passar o mouse */
+    &:hover {
+        transform: scale(1.08) rotate(-2deg);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.9);
+        background-color: rgb(20, 10, 60);
+    }
+}

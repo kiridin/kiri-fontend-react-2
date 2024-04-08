@@ -1,0 +1,136 @@
+
+:root {
+    --cor-principal: #1e90ff;
+    --cor-secundaria: #1e2e2e;
+    --cor-background: #111A1A;
+    --cor-hover: #237a57;
+    --cor-texto: antiquewhite;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --hover-shadow-color: rgba(0, 0, 0, 0.5);
+    --focus-shadow: rgba(30, 144, 255, 0.7);
+    --scrollbar-thumb-color: rgba(0, 0, 0, 0.4);
+    --scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.6);
+}
+
+* {
+    transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
+}
+
+.modal-dialog {
+    max-width: 800px;
+    top: 150px;
+    animation: fadeIn 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+.form-control {
+    border: 2px solid black;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: var(--cor-principal);
+    box-shadow: 0px 0px 15px var(--focus-shadow);
+}
+
+#btn-adicionar {
+    background-color: var(--cor-background);
+    border-radius: 4px;
+    color: var(--cor-texto);
+    border: 1px solid rgb(19, 17, 17);
+    padding: 5px 20px;
+    left: 120px;
+}
+
+#btn-adicionar:hover {
+    background-color: var(--cor-secundaria);
+    transform: scale(1.08);
+}
+
+
+.table-container {
+    max-height: 700px;
+    margin-top: 150px;
+    overflow-y: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.table {
+    direction: ltr;
+    font-size: 1vw;
+    box-shadow: 0px 0px 20px var(--shadow-color);
+    border-collapse: separate;
+    border-spacing: 0;
+    top: -151px;
+}
+
+.table:hover {
+    box-shadow: 0px 0px 25px var(--hover-shadow-color);
+}
+
+
+.table-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover-color);
+}
+
+.btn-outline-primary, .btn-primary {
+    min-width: 110px;
+    margin-right: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-outline-primary:hover, .btn-primary:hover {
+    background-color: var(--cor-secundaria);
+    transform: scale(1.05);
+}
+
+
+.custom-thead {
+    background-color: white !important;
+    box-shadow: 0px 10px 20px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.custom-thead:hover {
+    box-shadow: 0px 12px 25px var(--hover-shadow-color);
+}
+
+
+.linha {
+    background-color: rgb(255, 252, 252);
+    position: absolute;
+    z-index: 99;
+    width: 84.7%;
+    height: 2px;
+    top: 236px;
+    box-shadow: 0px 8px 15px var(--shadow-color);
+}
+
+.modal-header {
+    background-image: linear-gradient(90deg, var(--cor-background) 0%, var(--cor-hover) 100%);
+    color: var(--cor-texto);
+}
